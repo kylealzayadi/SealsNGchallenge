@@ -1,0 +1,28 @@
+<div>
+<p *ngFor="let item of journals"> 
+ <u> {{item.title}}
+  </u><br> {{item.content}}
+</p>
+</div>
+<!-- <p *ngIf="!firstname.valid">
+  Hey, not valid.
+</p>  -->
+<div>
+   <form [formGroup]="form" (ngSubmit)="onSubmit()"> 
+     <label>
+        Title:
+     <input type="text" placeholder="Enter Title Here" formControlName="title"> 
+    </label>
+    <label>
+       Entry:
+     <input type="text"  placeholder="Enter Entry Here"  formControlName="content"> 
+    </label>
+     <button type="submit"> Submit</button>
+    </form> 
+  </div>
+  <div>
+    <button (click)="getData()"></button>
+  </div>
+
+ 
+

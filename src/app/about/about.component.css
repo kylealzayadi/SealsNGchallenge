@@ -1,0 +1,36 @@
+h1 { 
+    color: blueviolet;
+    font-size: 70px;
+    position: relative; top: 10px; left: 450px
+}
+h2 { color:  white;
+    font-size: 50px;
+    position: fixed;  top: 220px; left: 550px
+}
+#green{
+    color: orange;
+}
+
+.red{
+    color: red;
+}
+
+body{
+    background-image: url(/src/assets/USC\ bimage.png);
+    background-repeat: repeat-x, repeat; background-size: 100px;
+}
+#bspot{
+    position:  fixed;  bottom: 700px; top: 300px;
+    
+}
+#fspot{
+    position: fixed; top: 550px;
+    left: 1150px; }
+
+#btext{ color: red;
+position: fixed; top: 350px; right: 100px;left: 300px;
+}
+#ftext{ color: blue;
+    position: fixed; top: 650px; left: 30px; 
+}
+
