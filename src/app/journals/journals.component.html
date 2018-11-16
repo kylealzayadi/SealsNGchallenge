@@ -1,4 +1,7 @@
 <div>
+  <button (click)="getData()"></button>
+</div>
+<div>
 <p *ngFor="let item of journals"> 
  <u> {{item.title}}
   </u><br> {{item.content}}
@@ -20,9 +23,7 @@
      <button type="submit"> Submit</button>
     </form> 
   </div>
-  <div>
-    <button (click)="getData()"></button>
-  </div>
+ 
 
  
 
