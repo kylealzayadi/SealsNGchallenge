@@ -9,7 +9,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { JournalsComponent } from './journals/journals.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
+import { SingleBlogComponent } from './single-blog/single-blog.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule} from '@angular/common/http'
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    JournalsComponent
+    JournalsComponent,
+    SingleBlogComponent
   ],
   imports: [
     BrowserModule,

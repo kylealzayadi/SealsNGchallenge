@@ -1,0 +1,17 @@
+#err{
+    font-size: 14px;
+    color: red;
+}
+
+#padding{
+    padding: 25px 75px;
+}
+
+.blog-link{
+    cursor: pointer;
+    color: lightcoral;
+}
+
+.blog-link:hover{
+    color: black;
+}

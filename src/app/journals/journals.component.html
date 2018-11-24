@@ -1,17 +1,17 @@
-<div>
-  <button (click)="getData()"></button>
-</div>
-<div>
-<p *ngFor="let item of journals"> 
- <u> {{item.title}}
-  </u><br> {{item.content}}
-</p>
-</div>
+
+<div id="padding">
+    <div *ngFor="let item of journals">
+      <div class="blog-link" (click)="viewBlog(item._id)">
+          {{item.title}}
+      </div>
+    </div>
+
+
 <!-- <p *ngIf="!firstname.valid">
   Hey, not valid.
 </p>  -->
 <div>
-   <form [formGroup]="form" (ngSubmit)="onSubmit()"> 
+   <form [formGroup]="form" (ngSubmit)="post()"> 
      <label>
         Title:
      <input type="text" placeholder="Enter Title Here" formControlName="title"> 
@@ -20,9 +20,12 @@
        Entry:
      <input type="text"  placeholder="Enter Entry Here"  formControlName="content"> 
     </label>
-     <button type="submit"> Submit</button>
+     <button type="submit"> Post</button>
     </form> 
   </div>
+  <div style="text-align:center">
+      <button  (click)="getData()" >dsfdsfsdfsdf</button>
+    </div>
  
 
  
